@@ -1,0 +1,221 @@
+body {
+	font-family: "Raleway"; sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Header*/
+
+	.first-try {
+		display: flex;
+				}
+
+		.first-try img {
+		height: 60px;
+						}
+
+		.first-try nav {
+		display: flex;
+		position: relative;
+		margin-left:  1200px;
+			
+						}				
+
+			.first-try nav ul {
+			display: flex;	
+			margin: right;	
+								}
+
+				.first-try nav li {
+				display: flex;	
+				text-decoration: none;
+				padding-right: 10px;
+								}	
+		/*Main*/
+
+main h1{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: :left;
+	width: 100%;
+	font-size: 30px;
+	font-weight: 900;
+		}
+
+
+main h2 {
+	text-transform: lowercase;
+	text-align: left;
+	font-variant: small-caps;		
+	}
+	
+	.second-try ul{
+	display: flex;
+		
+		}
+		.second-try li{
+		display:flex;
+		padding:10px 20px;
+		width: 100%;
+		border-style: solid;
+		border-radius: 20px;
+	
+						}
+.hotel {
+		margin-right: 20px;
+		border-radius: 20px 20px;
+		width: 100%;
+		background-color: blue;
+		border: dotted;
+		}
+		
+	.hotel-bedrooms-container {
+			
+			border-radius: 20px;
+			padding: 80px;
+			background-color: crimson;
+			display: flex;
+			flex-wrap: wrap;
+			width: 70%;
+			margin: 10px;
+
+		}
+		
+		.hotel-bedrooms-container-block1 img {
+			width: 300px;
+			padding: 20px;
+	
+		}
+
+		.hotel-bedrooms-container-block1 h3 { 
+			text-decoration: line-through;
+
+		}
+		.hotel-bedrooms-container-block2 img {
+			width: 300px;
+			padding: 20px;
+		}
+		
+		.hotel-bedrooms-container-block3 img {
+			width: 300px;
+			padding: 20px;
+
+		}
+
+		.hotel-bedrooms-container-block4 img {
+			width: 300px;
+			padding: 20px;
+		}
+		
+		.hotel-bedrooms-container-block5 img {
+			width: 300px;
+			padding: 20px;
+		}
+		
+		.hotel-bedrooms-container-block6 img {
+			width: 300px;
+			padding: 20px;
+		}
+
+		
+		/*Aside*/
+		.hotel-bedrooms-container2   {
+			background-color: aquamarine;
+			width: 25%;
+			display: block;
+			float: right;
+			position: absolute; top: 475px;px;left: 1300px;
+			padding-bottom: 0px;
+			padding-top: 10px;
+			block-size: 810px;
+
+		} 
+
+		
+		.hotel-bedrooms-container2 img {	
+			width: 300px;
+			padding: 20px;
+	
+		}
+		.hotel-activities-container {
+			border-radius: 20px;
+			padding: 80px;
+			background-color: rgb(200, 220, 20);
+			width: 100%;
+			display: flex;
+
+		}
+
+		.hotel-activities-container-picture1 img {
+			height: 600px;
+			width: 350px;
+		}
+
+		.hotel-activities-container-picture2 img {		
+			width: 300px;
+			padding: 60px;
+
+		}
+
+		.hotel-activities-container-picture3 img {
+			width: 300px;
+
+		}
+
+
+		.hotel-activities-container-picture4 img {
+			height: 600px;
+			width: 350px;
+		}
+
+		.hotel-activities-container-picture5 img {		
+			width: 300px;
+			padding: 60px;
+		}
+
+		.hotel-activities-container-picture6 img {		
+			width: 300px;
+			padding: 60px;
+		}
+
+
+
+
+/*Footer*/
+
+.last-try {
+	display: flex;
+	border: dotted;
+	
+}
+
+
+.content-lists {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+
+}
+
+
+
+.content-list li {
+ 	text-decoration-style: none;
+ 	display: flex;
+ 	background-color: yellowgreen;
+	justify-content: space-around;
+	padding: 20px;
+	line-height: 10px;
+	
+}
+
+
+
+@media screen and (max-width=768px){
+
+	
+}
+
