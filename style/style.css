@@ -1,5 +1,6 @@
 body {
 	font-family: "Raleway"; sans-serif;
+	box-sizing: border-box;
 }
 
 a {
@@ -37,7 +38,7 @@ a {
 
 main h1{
 	font-weight: bold;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	text-align: :left;
 	width: 100%;
 	font-size: 30px;
@@ -46,7 +47,7 @@ main h1{
 
 
 main h2 {
-	text-transform: lowercase;
+	text-transform: capitalize;
 	text-align: left;
 	font-variant: small-caps;		
 	}
@@ -74,150 +75,164 @@ main h2 {
 	.hotel-bedrooms-container {
 			
 			border-radius: 20px;
-			background-color: crimson;
+			background-color:#F2F2F2;
 			display: flex;
 			flex-wrap: wrap;
 			max-width: 65%;
 			justify-content: center;
 			
-
+		
+		
 		}
 		
-		.hotel-bedrooms-container-block1together1 {
-			border: dotted;
-
-		}
-	
-
-		.hotel-bedrooms-container-block1together1 p {
-			text-transform: uppercase;
-	
-		}
+		.hotel-bedrooms-container-block1together1 {	
+			border: double;	
+			border-radius: 10px;
 		
-		.hotel-bedrooms-container-block1together2 {
-			border: dotted;
 
-		}
-
-		.hotel-bedrooms-container-block1together3 {
-			border: dotted;
-
-		}
-
-		.hotel-bedrooms-container-block1together4 {
-			border: dotted;
-
-		}
-
-		.hotel-bedrooms-container-block1together5 {
-			border: dotted;
-
-		}
-
-		.hotel-bedrooms-container-block1together6 {
-			border: dotted;
-
-		}
+		}	
 
 		.hotel-bedrooms-container-block1 img {
 			width: 290px;
-			padding: 10px;
 			height: 400px;
+			padding: 20px;
 		}
 
-		.hotel-bedrooms-container-block1 h3 { 
-			text-decoration: line-through;
-
-		}
 		.hotel-bedrooms-container-block1 p {
-			text-transform: uppercase;
+			border: dotted;
+		}
 
+		
+		.hotel-bedrooms-container-block1together2 {	
+			border: double;	
+			border-radius: 10px;
+
+		}	
+
+	
+		.hotel-bedrooms-container-block1 img {
+			height: 400px;
+			padding: 20px;
+			width: 290px;
+		}
+
+		.hotel-bedrooms-container-block1 p {
+			border: none;
+		}
+
+
+		.hotel-bedrooms-container-block1together3 {
+			border: double;	
+			border-radius: 10px;
+
+		}
+		.hotel-bedrooms-container-block1 img {
+			width: 290px;
+			height: 400px;
+			padding: 20px;
+		}
+
+		.hotel-bedrooms-container-block1 p {
+			border: none;
+		}
+
+		.hotel-bedrooms-container-block1together4 {
+			border: double;	
+			border-radius: 10px;
+
+		}
+		.hotel-bedrooms-container-block1 img {
+			width: 290px;
+			height: 400px;
+			padding: 20px;
+		}
+
+		.hotel-bedrooms-container-block1 p {
+			border: none;
 		}
 		
-		.hotel-bedrooms-container-block2 img {
-			width: 290px;
-			padding: 20px;
-			height: 400px;
-
+		.hotel-bedrooms-container-block1together5 {
+			border: double;	
+			border-radius: 10px;
 		}
-		
-		.hotel-bedrooms-container-block3 img {
+		.hotel-bedrooms-container-block1 img {
 			width: 290px;
-			padding: 20px;
 			height: 400px;
-
+			padding: 20px;
 		}
 
-		.hotel-bedrooms-container-block4 img {
-			width: 290px;
-			padding: 20px;
-			height: 400px;
+		.hotel-bedrooms-container-block1 p {
+			border: none;
 		}
-		
-		.hotel-bedrooms-container-block5 img {
-			width: 290px;
-			padding: 20px;
-			height: 400px;
+		.hotel-bedrooms-container-block1together6 {
+			border: double;	
+			border-radius: 10px;	
 		}
-		
-		.hotel-bedrooms-container-block6 img {
+		.hotel-bedrooms-container-block1 img {
 			width: 290px;
-			padding: 20px;
 			height: 400px;
+			padding: 20px;
 		}
-
 		
 		
 		/*Aside*/
 
 		.hotel-bedrooms-container2   {
-			background-color: aquamarine;
+			background-color:#F2F2F2;
 			display: block;
-			padding-bottom: 0px;
-			padding-top: 10px;
 			border-radius: 20px;
 			width: 40%;
-	
 
 		}
 
 		
 		.hotel-bedrooms-container2ensemble {
-			border:dotted
+			float: right;
+			display: flex;
+			border: double;
+
+		}
+		.hotel-bedrooms-container2ensemble-block article {
+			padding-left: 250px;
+			padding-top: 250px;
 		}
 		
-		.hotel-bedrooms-container2ensemble text {
-			text-transform: inherit;
-		}
-
-
 		.hotel-bedrooms-container3ensemble {
+			float: right;
+			display: flex;
+			border: double;
 
-			border:dotted
+		}
+		.hotel-bedrooms-container3ensemble-block article {
+			padding-left: 250px;
+			padding-top: 250px;
+
 		}
 
 		.hotel-bedrooms-container4ensemble {
-
-			border:dotted
-		}
-
-
-		.hotel-bedrooms-container2 img {	
-			width: 300px;
-			height: 400px;
-		}
-
-		.hotel-bedrooms-container2ensemble article {
-			text-transform: uppercase;
 			float: right;
-			padding-right: 100px;
-			
+			display: flex;
+			border: double;
+
+		}
+		.hotel-bedrooms-container3ensemble-block article {
+			padding-left: 250px;
+			padding-top: 250px;
+
+		}	
+		
+
+		.hotel-bedrooms-container2 img {
+				width: 500px;
+				height: 400px;
+				border: double;
+		 
 		}
 		
 		
 		.hotel-activities-container {
 			border-radius: 20px;
-			background-color: rgb(200, 220, 20);
+			background-color:#F2F2F2 ;
 			width: 100%;
 			display: flex;
 			border: dotted;
