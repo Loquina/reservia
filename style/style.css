@@ -1,51 +1,323 @@
-body {
-	font-family: "Raleway"; sans-serif;
-	box-sizing: border-box;
+/*GENERAL*/
+
+/*BODY*/
+html,body {
+	font-family: "Raleway";
+}
+.flexCentre {
+	display: flex;				
+	justify-content: center;
+	align-items: center;
+}	
+.flexBetween {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
 }
 
-a {
+/*45 POR CIENTO DEL CONTENEDOR MADRE*/
+.sizeLiens {
+	width: 45%;
+}
+
+.sizeLien {
+	width: 140px;
+	height: 99px;
+}
+
+.colorLien13 {
+	color: blue;
+}
+
+.colorLien2 {
+	color: black;
+}
+.colorBleuClair {
+	color: #DEEBFF;	
+}
+.colorGris {
+	color:#F2F2F2		
+
+} 
+.backBleu {
+	background-color:  #0065FC;						
+} 
+.backBleuClair {
+	background-color: #DEEBFF;
+} 
+.backGris {
+	background-color:#F2F2F2;
+}
+
+.flexAround {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}	
+
+.flexColumnCentre {
+	display: flex;
+	flex-direction: column;				
+	justify-content: center;
+	align-items: center;
+}
+.flexColumnAround {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+
+.flexColumnBetween {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+
+}
+			
+.decorationNone {
 	text-decoration: none;
 }
 
-/*Header*/
+.bordureNone {
+	border: none;
+}
 
-	.first-try {
-		display: flex;
-				}
+.paddingSearch {
+	padding-left: 20px;
+}
 
-		.first-try img {
-		height: 60px;
-						}
+.buttonSearch{
+	height:50px;
+	width:120px;
+	background-color: blue;
+	color:white;
+	cursor:pointer;
+	border-radius: 0 10px 10px 0;
+}
 
-		.first-try nav {
-		display: flex;
-		position: relative;
-		margin-left:  1200px;
-			
-						}				
-
-			.first-try nav ul {
-			display: flex;	
-			margin: right;	
-								}
-
-				.first-try nav li {
-				display: flex;	
-				text-decoration: none;
-				padding-right: 10px;
-								}	
-		/*Main*/
-
-main h1{
+.textGras {
 	font-weight: bold;
-	text-transform: capitalize;
-	text-align: :left;
+}			
+
+/*NAV*/
+	
+.sizeNav {
+	height:100px;
+
+}	
+.bordureNav	{
+	border-top: 1px solid blue;
+}	
+
+.bordureNav23{
+	border-top: 1px solid transparent;
+}
+
+
+.margLogo {
+	margin-bottom: 7px;
+}
+					
+/*HEADER*/
+
+.bordureSearch {
+	width: 400px;
+	border-radius: 10px;
+	border:0.5px solid #F2F2F2;
+		
+}
+.recherche {
+	height: 50px;
+	width: 230px;
+	font-size: 18px;
+	color:black;
+	font-weight: bold;
+}
+.iconSize {
+	height:50px;
+	width:50px;
+	border-radius: 10px 0 0 10px;
+
+}
+
+/*Filtres*/
+
+.filtre {
+
+	display: flex;
+	align-items: center;
+}
+
+.margFiltre {
+
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.margFiltreTitre {
+	margin-right: 20px;
+
+}
+
+.filtreTextIcons {
+	border: 2px solid #F2F2F2;
+	height: 50px;
+	border-radius: 30px;
+	margin-right: 20px;
+
+}
+
+.filtreIcons {
+	border-radius: 25px;
+	width:	52px;
+	height:	52px;
+	color:#0065FC;
+	background-color: lightblue;
+	margin-left:-2px;
+}
+
+.filtreTextIcons:hover >.filtreText {
+	color:#0065FC;
+}
+
+.filtreTextIcons:hover > .filtreIcons {
+	color:white;
+	background-color: #0065FC;
+}
+
+.filtreText {
+	height:50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 0 25px 25px 0;
+}
+
+/*HEBERGEMENTS*/
+
+.sizeHebergements {
+	flex:2;/*2 fois plus de taille par rapport a size populaires*/
+	height: 650px;
+	margin-right: 20px;
+	border-radius: 10px;
+
+}
+
+.sizePopulaires {
+	flex: 1;
+	height: 650px;
+	margin-left:20px;
+	border-radius: 10px;
+
+}
+.blocSejour {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.bloc1 {
+	margin-bottom: 10px;
+}
+.bloc2 {
+	margin-top: 10px;
+}
+.cubeDetailHebergements {
+	width: 90%;
+
+}
+.imgHebergements1 {
+
+	background-image: url("../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
 	width: 100%;
-	font-size: 30px;
-	font-weight: 900;
-		}
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+
+}	
+.imgHebergements2 {
+
+	background-image: url("../img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+}
+
+.imgHebergements3 {
+
+	background-image: url("../img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+}
+
+.imgHebergements4 {
+
+	background-image: url("../img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+}
+
+.imgHebergements5 {
+
+	background-image: url("../img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+}
+
+.imgHebergements6 {
+
+	background-image: url("../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+}
+
+.cubeHebergements {
+	width:30%;/*de son parent*/
+	height:auto;
+	background-color: white;
+	padding:1%;
+	border-radius: 20px;
+}
+
+/*Populaires*/
+
+.blocPopulaires {
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+.imgPopulaires1 {
+
+	background-image: url("../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0 0;
+
+}	
 
 
+
+
+
+
+
+
+
+/*Trabajo Vero*/
 main h2 {
 	text-transform: capitalize;
 	text-align: left;
@@ -343,8 +615,5 @@ main h2 {
 
 
 
-@media screen and (max-width=768px){
 
-	
-}
 
