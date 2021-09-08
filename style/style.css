@@ -9,11 +9,18 @@ html,body {
 	justify-content: center;
 	align-items: center;
 }	
+.flexAround {
+	display:flex;
+	justify-content: space-around;
+	align-items:center
+}
+
 .flexBetween {
 	display: flex;
 	justify-content:space-between;
 	align-items: center;
 }
+
 
 /*45 POR CIENTO DEL CONTENEDOR MADRE*/
 .sizeLiens {
@@ -546,4 +553,6 @@ html,body {
 .ColorBleu {
 	color: #0065FC;
 }
+
+
 
