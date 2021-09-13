@@ -1,0 +1,90 @@
+/*Media Queries*/
+/*// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
+
+@media screen and (max-width: 1295px) {
+    .sizeLien12 {
+        margin-left: 35%;
+    } 
+    
+    .cubeDetailHebergements { /*Manipulacion para agrandar las cartas pero hubo un problema porque el contenedor madre cubeHebergements no era suficientemente grande para acoger a las cartas hijas y eso porque la talla indicada de cada carta no era la adecuada para cada carta*/
+        min-height:150px;     
+
+    }
+
+    .sizeHebergements {
+        min-height:auto;
+        padding: 20px;/*anadimos el padding para tener espacio alreddedor del bloque hebergements y haremos igual con el bloque populaires y luego inyectaremos las propiedades css en size populaires asi los bloques hebergements y populaires tendran una mini altura automatica que se agrandara en funcion del tamano impuesto a cada carta */ 
+
+    }
+
+    .sizePopulaires {
+        min-height:auto;
+        padding: 20px;
+    }
+
+
+
+/*@media screen and (min-device-width: 575.98px) and (max-width: 767.98px) {
+    /*body {
+        background-color: beige;
+            } 
+    .cube0 {
+        background-color: chocolate;
+                
+                    }        
+    .cube123 {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+    
+    .cube2:nth-child(2) /* On prend le deuxième bloc élément */
+    /*{
+  
+        align-self: flex-end;} /* Seul ce bloc sera aligné à la fin */
+     
+
+    /*
+    .cube1 {
+        background-color:rgb(0, 0, 0);
+        
+    } 
+
+    .cube2 {
+        background-color:rgb(130, 0, 130);
+    }
+    
+    .cube3 {
+        background-color:green;
+    }
+    
+
+    }	
+     
+ @media screen and (min-device-width: 768px) and (max-device-width: 991.98px) {
+    body {
+            background-color: red;
+                } 
+
+    }	
+@media screen and (min-device-width: 992px) and (max-device-width: 1199.98px)   {
+    body {
+        background-color: yellow;
+        } 
+    }
+*/
+    

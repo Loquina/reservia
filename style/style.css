@@ -1,18 +1,9 @@
 /*GENERAL*/
 
 /*BODY*/
+
 html,body {
 	font-family: "Raleway";
-}
-.flexCentre {
-	display: flex;				
-	justify-content: center;
-	align-items: center;
-}	
-.flexAround {
-	display:flex;
-	justify-content: space-around;
-	align-items:center
 }
 
 .flexBetween {
@@ -21,19 +12,36 @@ html,body {
 	align-items: center;
 }
 
+.flexAround {
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
+
+.flexCentre {
+	display: flex;				
+	justify-content: center;
+	align-items: center;
+}	
+
 
 /*45 POR CIENTO DEL CONTENEDOR MADRE*/
 .sizeLiens {
-	width: 45%;
+	width: 100%;
 }
 
 .sizeLien {
 	width: 140px;
 	height: 99px;
 }
+.sizeLien12{
+    margin-left: 60%;
+
+}
 
 .colorLien13 {
-	color: blue;
+	color:#0065fc;
 }
 
 .colorLien2 {
@@ -55,12 +63,6 @@ html,body {
 .backGris {
 	background-color:#F2F2F2;
 }
-
-.flexAround {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}	
 
 .flexColumnCentre {
 	display: flex;
@@ -94,14 +96,18 @@ html,body {
 	padding-left: 20px;
 }
 
+
+
 .buttonSearch{
 	height:50px;
 	width:120px;
-	background-color: blue;
+	background-color: #0065fc;
 	color:white;
 	cursor:pointer;
 	border-radius: 0 10px 10px 0;
 }
+
+
 .buttonSearch:hover{
 	color: #0065fc;
 	background-color: #F2F2F2;
@@ -115,7 +121,7 @@ html,body {
 /*NAV*/
 	
 .sizeNav {
-	height:100px;
+	height:auto;
 
 }	
 .bordureNav	{
@@ -138,18 +144,25 @@ html,body {
 					
 /*HEADER*/
 
+.bureauNo {
+	display:none;
+}
+
 .bordureSearch {
 	width: 400px;
 	border-radius: 10px;
 	border:0.5px solid #F2F2F2;
 		
 }
+
+
 .recherche {
 	height: 50px;
 	width: 230px;
 	font-size: 18px;
 	color:black;
 	font-weight: bold;
+
 }
 .iconSize {
 	height:50px;
@@ -554,5 +567,186 @@ html,body {
 	color: #0065FC;
 }
 
+/*Responsive*/
+@media screen and (max-width: 1295px) {
+    .sizeLien12 {
+        margin-left: 35%;
+    } 
+    
+    .cubeDetailHebergements { /*Manipulacion para agrandar las cartas pero hubo un problema porque el contenedor madre cubeHebergements no era suficientemente grande para acoger a las cartas hijas y eso porque la talla indicada de cada carta no era la adecuada para cada carta*/
+        min-height:150px;     
 
+    }
 
+    .sizeHebergements {
+        min-height:auto;
+        padding: 20px;/*anadimos el padding para tener espacio alreddedor del bloque hebergements y haremos igual con el bloque populaires y luego inyectaremos las propiedades css en size populaires asi los bloques hebergements y populaires tendran una mini altura automatica que se agrandara en funcion del tamano impuesto a cada carta */ 
+
+    }
+
+    .sizePopulaires {
+        min-height:auto;
+        padding: 20px;
+    }
+}                          
+@media screen and (max-width: 990px) {
+    .mobileFiltrewrap  {
+        flex-direction: column;
+		align-items: flex-start;
+                        }
+                   
+
+	.filtreTextIcons {
+		margin-bottom: 20px;
+	}	
+	
+	#hebergements {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+
+	.blocPopulaires {
+		flex:none;
+		width: 90%;
+		margin-left:0;
+		padding:5%;
+		
+	}
+	.blocSejour {
+		flex:none;
+		width: 90%;
+		margin-right: 0;
+		margin-top: 50px;
+		padding: 5%;
+	}
+	}
+@media screen and (max-width: 770px) {
+	.sizeLiens {
+		width: 90%;
+
+}
+	.sizeLien12	{
+		margin-left: 20%;
+	}
+	.blocSejour {
+		height: auto;
+	}
+	.bloc1{
+		flex-direction: column;
+		margin-bottom: 0;
+
+	}
+	.bloc2{
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.cubeHebergements {
+		width: 100%;
+		margin-bottom: 50px;
+
+	}
+	.cubeDetailHebergements {
+		min-height: auto;
+	
+	}
+	.blocActivites {
+		flex-direction: column;
+		height: auto;
+
+	}
+	.cubeActivites{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.blocActivites2356 {
+		width: 100%;
+		height: auto;
+	}
+	.cubeActivites2356 {
+
+		margin-bottom: 50px;
+	}
+	.imgActivites1, .imgActivites2, .imgActivites3, .imgActivites4, .imgActivites5, .imgActivites6 {
+
+		height:200px;
+	}
+	.footer { /*hay que ajustar la altura ya que los elementos se salen*/
+
+		flex-direction: column;
+		align-items: flex-start;/*para que los elementos empiecen al comienzo del footer*/
+		height: auto;
+		padding-left: 20px;/* cuando se usa flex-box se utiliza justify-content */
+	}
+	.margeBlocFoot1 {
+		margin-left: 0;
+
+	}
+
+	}
+@media screen and (max-width: 600px) {
+	
+	.sizeLien {
+		flex-direction: row;
+	} /*para comprender que debe quedar en linea y no en columna*/
+	
+
+	.sizeLien12 {
+		order: 1;
+		width: 100%;/*ESTE CUBO TOMARA 100 POR CIENTO DE SU PAPA*/
+		margin-left: 0;
+	
+	}
+
+	.sizeLienMobile {
+		width: 50%; /*TOMA EL 50 POR CIENTO DE TU PADRE SIZELIEN12*/
+		border-top: 0;
+		border-bottom: 5px solid #F2F2F2;
+	}
+
+	.sizeLiens {
+	
+		width:100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.sizeLienMobile:hover {
+		border-top:0;
+		border-bottom: 5px solid #0065FC;
+
+	}
+	.mobileTitreh1 {
+		font-size:x-large;
+	}
+	
+	.bordureSearch {
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		border-bottom: 1px solid #F2F2F2;
+		border-top: 1px solid #F2F2F2;
+	}
+
+	.recherche {
+		width: 200px;
+		border-bottom: 1px solid #F2F2F2;
+		border-top: 1px solid #F2F2F2;
+	}
+
+	.buttonSearch {
+		width: 50px;
+		border-radius: 15px;
+
+	}
+
+	.bureauNo {
+		display:block;
+	}
+	
+
+	.mobileNone {
+		display:none;
+	}
+
+	
+	
+}

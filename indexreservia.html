@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
@@ -15,40 +15,54 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/04b5a3f05a.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="./style/style.css" />	
-
-
+	<link rel="stylesheet" href="./style/style.css" />
 	
-
 
 </head>
 
 
 <body>
 	<nav class="sizeNav">
-		<div class="flexBetween">	
-			<div>
-				<img
-				class=margLogo
+		<div class="sizeLiens flexBetween">	
+			<div> 
+
+			 
+					<img
+				class="margLogo"
 				src="./img/reservia_logo.png" 
 				alt="logo reservia" 
 				width="120px" 
 				height="50px"
 				/>
+								
 			</div>
-			<div class="sizeLiens flexAround">	
-				<div class="sizeLien flexCentre bordureNav">
-					<a class="colorLien2 decorationNone" href="#hebergements">Hébergements</a>
-				</div>	
-	
-			<div class="sizeLien flexCentre bordureNav">
-					<a class="colorLien2 decorationNone" href="#activités">Activités</a>
-				</div>
-				<div class="sizeLien flexCentre bordureNav">
-					<a class="textGras colorLien13 decorationNone" href="#">S'inscrire</a>
-				</div>
-			</div> 
-		</div>
+				
+				
+				
+				<div class="sizeLien12 flexCentre">	<!--Apertura div para agrupar bloques hebergements y activites abajo logo para lograr modo responsive-->			
+				
+					<div class="sizeLien sizeLienMobile flexCentre bordureNav">
+						<a class="colorLien2 decorationNone" href="#hebergements">Hébergements</a>
+					</div>	
+							
+					
+				
+									
+				
+					<div class="sizeLien sizeLienMobile flexCentre bordureNav">
+						<a class="colorLien2 decorationNone" href="#activités">Activités</a>
+					</div>
+				</div>	<!--Clausura div para agrupar bloques hebergements y activites abajo logo para lograr modo responsive-->			
+					
+									
+				
+					<div class="sizeLien flexCentre bordureNav">
+						<a class="textGras ColorBleu decorationNone" href="#">S'inscrire</a>
+					</div>			
+								
+						
+			
+		</div>			<!--fin div sizeLiens flexBetween-->
 	</nav>		
 
 	
@@ -63,10 +77,11 @@
 			<p>En plein centre ville ou en pleine nature</p>
 		</div>
 
-		<div class="backGris bordureSearch flexCentre">
-			<div class="flexCentre iconSize">
+		<div class="backGris bordureSearch flexCentre"> <!--Apertura contenedor madre elementos del filtro de busqueda-->
+			
+			<div class="flexCentre iconSize"> <!--apertura div que contiene el icono mapa-->
 				<i class="fas fa-map-marker-alt"></i>
-			</div>
+			</div>							 <!--clausura div que contiene el icono mapa-->
 
 			<div>
 				<input 
@@ -75,31 +90,46 @@
 				value="Marseille, France"/>
 			</div>
 			
-			<div class="backBleu flexCentre buttonSearch">Rechercher</div>
+			<div class="backBleu flexCentre buttonSearch">
+				<span class="bureauNo"><i class="fas fa-search fa-lg"></i></span>	
+				<span class="mobileNone">Rechercher</span>
+				
+			</div>	
+		</div> 											<!--Clausura contenedor madre elementos del filtro de busqueda-->
 
+		
+		
+		<div class="mobileFiltrewrap filtre margFiltre">
+					<div class="margFiltreTitre"><h3>Filtres</h3>
 		</div>
-
-		<div class="filtre margFiltre">
-					<div class="margFiltreTitre"><h3>Filtres</h3></div>
+					<!--anado dos divisiones flexAround para separar en mobile-->
+					
+					
+				<div class="flexAround"> <!--Apertura division bloque 1 para version mobile-->
+					
+					
 					<div class="flexBetween filtreTextIcons">
 						<i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
 							<div class="filtreText flexCentre">Economiques</div>
-					</div>
-
+					</div> <!--Clausura division flexBetween filtreTextIcons-->
+					 
 					<div class="flexBetween filtreTextIcons">
 						<i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
 							<div class="filtreText flexCentre">Familiales</div>
-					</div>
-				
+					</div> <!--Clausura division flexBetween filtreTextIcons-->
+				</div> <!--Clausura division bloque 1 para version mobile-->
+					
+				<div class="mobileFiltrewrap flexAround"> <!--Apertura division bloque 2 para version mobile-->
 					<div class="flexBetween filtreTextIcons">
 						<i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
 							<div class="filtreText flexCentre">Romantiques</div>
-					</div>
+					</div> <!--Clausura division flexBetween filtreTextIcons-->
 					
 					<div class="flexBetween filtreTextIcons">
 						<i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
 							<div class="filtreText flexCentre">Animaux Autorisés</div>
-					</div>
+					</div> <!--Clausura division flexBetween filtreTextIcons-->
+				</div><!--Clausura division para version mobile-->
 		</div>
 		
 		<div class="Additionnel">
@@ -111,7 +141,7 @@
 </header>
 		<section id="hebergements" class="flexAround">
 			<div class="flexColumnAround sizeHebergements backGris blocSejour">
-					<h3>Hébergements à Marseille</h3>
+					<h2>Hébergements à Marseille</h2>
 						<div class="bloc1 flexBetween">
 							<div class="cubeHebergements flexColumnCentre">
 								<div class="imgHebergements1"></div>
