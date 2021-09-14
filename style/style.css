@@ -338,7 +338,10 @@ html,body {
 	background-color: white;
 	padding:1%;
 	border-radius: 20px;
+	/*rajoute box shadow pour voir en version mobile et desktop*/
+	box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
+
 .cubeHebergements:hover {
 	cursor: pointer;
 	transform: scale(1.1);
@@ -533,7 +536,7 @@ html,body {
 
 .titreActivites {
 	display: flex;
-	justify-content: flex;
+	justify-content: center;
 	align-items: center;
 	padding-left: 5%;
 	width: 95%;
@@ -714,9 +717,9 @@ html,body {
 		border-bottom: 5px solid #0065FC;
 
 	}
-	.mobileTitreh1 {
+	/*.mobileTitreh1 {
 		font-size:x-large;
-	}
+	}*/
 	
 	.bordureSearch {
 		margin-left: auto;
@@ -746,7 +749,49 @@ html,body {
 	.mobileNone {
 		display:none;
 	}
+	html,body {
+		margin:0;
+		padding:0;
+	}
+	.margFiltre {
+		padding-left: 5%;
+	}
+	.mobileEconomiques{
+		margin-right: 5px;
 
-	
-	
+	}
+	.mobileFamiliales{
+		margin-right: 5px;
+	}
+
+	.filtreTexte {
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.info{
+		padding-left: 5%;
+
+	}
+
+	.blocPopulaires {
+		border-radius: 0;
+	}
+
+	.blocSejour{
+		background-color: white;
+
+	}
+
+	.mobileTitresPara {
+
+		padding-left: 5%;
+	}
+
+	.blocActivites {
+		padding: 5%;
+		width: 90%;
+	}
+
+
 }
